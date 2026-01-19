@@ -21,7 +21,7 @@
 - **纯 Python 实现** — 告别 MATLAB，拥抱开源
 - **GPU 加速支持** — 基于 CuPy 的大规模并行计算
 - **高性能 CPU 优化** — 使用 Numba JIT 编译加速
-- **Standalone** — 无需依赖原始 CBIG 工具箱即可独立运行
+- **自包含** — 无需依赖原始 CBIG 工具箱即可独立运行
 
 ## 技术栈
 
@@ -36,8 +36,8 @@
 
 ```
 lib/
-├── Cdln.py                     # 分割函数计算
-├── Cdln_Par.py                 # 并行版分割函数
+├── Cdln.py                     # 基于DLMF的高精度高性能贝塞尔函数实现
+├── Cdln_Par.py                 # 并行版贝塞尔函数
 ├── vmf_probability.py          # vMF 概率计算 (CPU)
 ├── vmf_probability_gpu.py      # vMF 概率计算 (GPU)
 ├── initialize_concentration.py # 浓度参数初始化
@@ -86,8 +86,8 @@ Our goals are:
 
 ```
 lib/
-├── Cdln.py                     # Partition function computation
-├── Cdln_Par.py                 # Parallel partition function
+├── Cdln.py                     # High-precision, high-performance Bessel function based on DLMF
+├── Cdln_Par.py                 # Parallel Bessel function
 ├── vmf_probability.py          # vMF probability (CPU)
 ├── vmf_probability_gpu.py      # vMF probability (GPU)
 ├── initialize_concentration.py # Concentration parameter initialization
